@@ -1,4 +1,4 @@
-[![Build](https://github.com/netlify/@netlify/submit-build-plugin-action/workflows/Build/badge.svg)](https://github.com/netlify/@netlify/submit-build-plugin-action/actions)
+[![Build](https://github.com/netlify/submit-build-plugin-action/workflows/Build/badge.svg)](https://github.com/netlify/submit-build-plugin-action/actions)
 
 # @netlify/submit-build-plugin-action
 
@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
-      - uses: netlify/submit-netlify-plugin@v1
+      - uses: netlify/submit-build-plugin-action@v1
         with:
           # GitHub token with `public_repo` scope.
           github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
