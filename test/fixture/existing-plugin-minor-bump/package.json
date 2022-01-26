@@ -1,0 +1,9 @@
+{
+  "description": "Run Next.js seamlessly on Netlify",
+  "name": "@netlify/plugin-nextjs",
+  "version": "3.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netlify/netlify-plugin-nextjs.git"
+  }
+}

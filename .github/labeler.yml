@@ -1,0 +1,9 @@
+- {
+    repoPatterns: ['netlify/sync-labels-action'],
+    labels:
+      [
+        { name: 'type: project', description: 'Describes a top level project issue', color: 'FBCA04' },
+        { name: 'type: initiative', action: delete },
+        { name: 'type: chore', description: '', color: '0E8A16', action: 'rename', rename_from: 'chore' },
+      ],
+  }

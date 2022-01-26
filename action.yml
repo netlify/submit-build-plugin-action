@@ -1,0 +1,28 @@
+name: 'Submit Netlify Build Plugin'
+author: 'Erez Rokah (erezrokah) <erez@netlify.com>'
+description: 'Submit a Netlify Build Plugin to the plugins directory'
+inputs:
+  github-token:
+    required: true
+    description: 'GitHub token with `public_repo` scope'
+  directory-repo:
+    default: netlify/plugins
+    description: 'The directory repo to submit the plugin to'
+    required: false
+  plugins-directory-url:
+    default: https://list-v2--netlify-plugins.netlify.app/plugins.json
+    description: 'The URL to the plugins directory'
+    required: false
+  plugins-file:
+    default: site/plugins.json
+    description: 'Plugins file to update'
+    required: false
+  package-json-dir:
+    description: 'Directory to look for a package.json file'
+    required: false
+runs:
+  using: 'node16'
+  main: 'dist/bin.js'
+branding:
+  icon: 'upload'
+  color: 'green'

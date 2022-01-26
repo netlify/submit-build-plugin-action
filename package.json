@@ -1,0 +1,79 @@
+{
+  "name": "@netlify/submit-build-plugin-action",
+  "private": true,
+  "version": "1.0.1",
+  "description": "A GitHub action to sync labels across repositories",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
+  ],
+  "scripts": {
+    "prepare": "husky install node_modules/@netlify/eslint-config-node/.husky/ && esbuild src/bin.ts --bundle --outdir=dist --platform=node",
+    "dev": "ts-node src/bin.ts",
+    "test": "run-s format test:dev",
+    "format": "run-s format:check-fix:*",
+    "format:ci": "run-s format:check:*",
+    "format:check-fix:lint": "run-e format:check:lint format:fix:lint",
+    "format:check:lint": "cross-env-shell eslint $npm_package_config_eslint",
+    "format:fix:lint": "cross-env-shell eslint --fix $npm_package_config_eslint",
+    "format:check-fix:prettier": "run-e format:check:prettier format:fix:prettier",
+    "format:check:prettier": "cross-env-shell prettier --check $npm_package_config_prettier",
+    "format:fix:prettier": "cross-env-shell prettier --write $npm_package_config_prettier",
+    "test:dev": "run-s test:dev:*",
+    "test:ci": "run-s test:ci:*",
+    "test:dev:ava": "ava",
+    "test:ci:ava": "nyc -r lcovonly -r text -r json ava"
+  },
+  "config": {
+    "eslint": "--ignore-path .gitignore --cache --format=codeframe --max-warnings=0 \"{src,scripts,.github}/**/*.{js,ts,md,html}\" \"*.{js,ts,md,html}\" \".*.{js,ts,md,html}\"",
+    "prettier": "--ignore-path .gitignore --loglevel=warn \"{src,scripts,.github}/**/*.{js,ts,md,yml,json,html}\" \"*.{js,ts,yml,json,html}\" \".*.{js,ts,yml,json,html}\" \"!**/package-lock.json\" \"!package-lock.json\""
+  },
+  "ava": {
+    "verbose": true,
+    "timeout": "3m",
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "keywords": [],
+  "license": "MIT",
+  "repository": "netlify/sync-labels-action",
+  "bugs": {
+    "url": "https://github.com/netlify/sync-labels-action/issues"
+  },
+  "author": "Netlify Inc.",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@netlify/eslint-config-node": "^4.1.7",
+    "@types/js-yaml": "^4.0.5",
+    "@types/pacote": "^11.1.3",
+    "@types/sinon": "^10.0.8",
+    "ava": "^4.0.0",
+    "esbuild": "^0.14.9",
+    "husky": "^7.0.4",
+    "nyc": "^15.0.0",
+    "sinon": "^12.0.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "@octokit/graphql-schema": "^10.73.0",
+    "node-fetch": "^2.6.7",
+    "octokit-plugin-create-pull-request": "^3.10.0",
+    "p-wait-for": "^3.0.0",
+    "pacote": "^12.0.2",
+    "read-pkg": "^5.0.0"
+  }
+}
