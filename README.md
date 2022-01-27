@@ -15,7 +15,7 @@ on:
     types: [published]
 
 jobs:
-  sync-label:
+  submit-plugin:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
