@@ -13,7 +13,7 @@ type Inputs = {
   githubToken: string
   owner: string
   repo: string
-  packageJsonDirectory?: string
+  packageJsonDirectory: string
   pluginsFile: string
 }
 
@@ -30,7 +30,7 @@ const getInputs = () => {
     'https://list-v2--netlify-plugins.netlify.app/plugins.json'
   const pluginsFile = core.getInput('plugins-file') || process.env.PLUGINS_FILE || 'site/plugins.json'
 
-  const packageJsonDirectory = core.getInput('package-json-dir') || process.env.PACKAGE_JSON_DIRECTORY
+  const packageJsonDirectory = core.getInput('package-json-dir') || process.env.PACKAGE_JSON_DIRECTORY || '.'
 
   return { githubToken, owner, repo, packageJsonDirectory, pluginsDirectory, pluginsFile }
 }
