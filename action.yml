@@ -21,8 +21,14 @@ inputs:
     description: 'Directory to look for a package.json file'
     required: false
 runs:
-  using: 'node16'
-  main: 'dist/bin.js'
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.github-token }}
+    - ${{ inputs.directory-repo }}
+    - ${{ inputs.plugins-directory-url }}
+    - ${{ inputs.plugins-file }}
+    - ${{ inputs.package-json-dir }}
 branding:
   icon: 'upload'
   color: 'green'
