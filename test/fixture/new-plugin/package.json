@@ -1,0 +1,7 @@
+{
+  "comment": "this should be a valid npm package",
+  "name": "npm",
+  "version": "8.0.0",
+  "author": "Netlify",
+  "description": "amazing new plugin"
+}
