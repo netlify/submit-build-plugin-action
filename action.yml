@@ -18,6 +18,7 @@ inputs:
     description: 'Plugins file to update'
     required: false
   package-json-dir:
+    default: '.'
     description: 'Directory to look for a package.json file'
     required: false
 runs:
