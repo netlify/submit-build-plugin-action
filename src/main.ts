@@ -68,7 +68,7 @@ export const run = async () => {
       owner,
       repo,
       pluginsFile,
-      content: JSON.stringify(updatedPlugins, null, 2),
+      content: `${JSON.stringify(updatedPlugins, null, 2)}\n`,
       isNew,
       name,
       version,
