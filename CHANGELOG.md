@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/netlify/submit-build-plugin-action/compare/v1.0.1...v1.1.0) (2022-02-02)
+
+
+### Features
+
+* log generated PR URL ([#16](https://github.com/netlify/submit-build-plugin-action/issues/16)) ([6fc07b2](https://github.com/netlify/submit-build-plugin-action/commit/6fc07b2b06df385082ad7394cf7f02bc9b17b9b8))
+
 ### [1.0.1](https://github.com/netlify/submit-build-plugin-action/compare/v1.0.0...v1.0.1) (2022-02-02)
 
 
