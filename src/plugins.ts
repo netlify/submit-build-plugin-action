@@ -27,7 +27,7 @@ const getCompatibility = ({ plugin, newVersion }: { plugin: Plugin; newVersion: 
 
   // update compatibility to the latest version
   // TODO: auto handle breaking changes
-  return [{ ...firstItem, version: newVersion }, plugin.compatibility.slice(1)]
+  return [{ ...firstItem, version: newVersion }, ...plugin.compatibility.slice(1)]
 }
 
 const handleExistingPlugin = ({
