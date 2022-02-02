@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.0.1](https://github.com/netlify/submit-build-plugin-action/compare/v1.0.0...v1.0.1) (2022-02-02)
+
+
+### Bug Fixes
+
+* add new line at the end of the file ([#13](https://github.com/netlify/submit-build-plugin-action/issues/13)) ([5d5b2ef](https://github.com/netlify/submit-build-plugin-action/commit/5d5b2ef2124659c4564f8493bb226399346d7446))
+* spread compatiblity field into an array ([#12](https://github.com/netlify/submit-build-plugin-action/issues/12)) ([68236e5](https://github.com/netlify/submit-build-plugin-action/commit/68236e583941249e5090302ed994df25b007874c))
+
 ## 1.0.0 (2022-01-31)
 
 
