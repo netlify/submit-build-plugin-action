@@ -43,7 +43,7 @@ export const createPR = async ({
     ? template.replace('[ ] Adding a plugin', '[x] Adding a plugin')
     : template.replace('[ ] Updating a plugin', '[x] Updating a plugin')
 
-  core.info(`Creating pull request for ${name}@${version} with title: ${title}`)
+  core.info(`Creating pull request for ${name}@${version} with title '${title}'`)
   const options = {
     owner,
     repo,
@@ -60,6 +60,7 @@ export const createPR = async ({
       },
     ],
   }
-  await composeCreatePullRequest(octokit, options)
-  core.info(`Done creating pull request for ${name}@${version}`)
+  const response = await composeCreatePullRequest(octokit, options)
+  const url = response?.data.html_url
+  core.info(`Done creating pull request for ${name}@${version}.${url ? ` See PR at ${url}` : ''}`)
 }
