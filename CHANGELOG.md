@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://github.com/netlify/submit-build-plugin-action/compare/v1.1.0...v1.1.1) (2022-02-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency pacote to v13 ([#24](https://github.com/netlify/submit-build-plugin-action/issues/24)) ([eee0a19](https://github.com/netlify/submit-build-plugin-action/commit/eee0a192d84f8a4a5b81eac46d52f284eeb7574e))
+
 ## [1.1.0](https://github.com/netlify/submit-build-plugin-action/compare/v1.0.1...v1.1.0) (2022-02-02)
 
 
