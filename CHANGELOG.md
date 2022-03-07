@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.3](https://github.com/netlify/submit-build-plugin-action/compare/v1.1.2...v1.1.3) (2022-03-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency octokit-plugin-create-pull-request to v3.10.1 ([#31](https://github.com/netlify/submit-build-plugin-action/issues/31)) ([3d3e0a3](https://github.com/netlify/submit-build-plugin-action/commit/3d3e0a38aaa6e666826f07f7d45b7ab86a2336fd))
+
 ### [1.1.2](https://github.com/netlify/submit-build-plugin-action/compare/v1.1.1...v1.1.2) (2022-02-28)
 
 
