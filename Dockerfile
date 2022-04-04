@@ -10,7 +10,7 @@ LABEL "homepage"="https://github.com/netlify/submit-build-plugin-action"
 LABEL "maintainer"="Netlify"
 
 # {x-release-please-start-version}
-LABEL "version"="1.1.5"
+LABEL "version"="1.1.6"
 # {x-release-please-end}
 
 COPY package.json package-lock.json tsconfig.json /
