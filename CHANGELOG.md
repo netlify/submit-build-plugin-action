@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.6](https://github.com/netlify/submit-build-plugin-action/compare/v1.1.5...v1.1.6) (2022-04-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @actions/github to v5.0.1 ([#46](https://github.com/netlify/submit-build-plugin-action/issues/46)) ([604c810](https://github.com/netlify/submit-build-plugin-action/commit/604c8100f5c60febce7b52933bb4702c5814673a))
+
 ### [1.1.5](https://github.com/netlify/submit-build-plugin-action/compare/v1.1.4...v1.1.5) (2022-03-21)
 
 
