@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.1.8](https://github.com/netlify/submit-build-plugin-action/compare/v1.1.7...v1.1.8) (2022-07-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @actions/core to v1.7.0 ([#57](https://github.com/netlify/submit-build-plugin-action/issues/57)) ([a384ac9](https://github.com/netlify/submit-build-plugin-action/commit/a384ac9e6df7fe06e1e8515345f4c0f11fc217aa))
+* **deps:** update dependency @actions/core to v1.8.0 ([#59](https://github.com/netlify/submit-build-plugin-action/issues/59)) ([78083fe](https://github.com/netlify/submit-build-plugin-action/commit/78083fe2a8c8d317b45a3e231f65ac887b984f16))
+* **deps:** update dependency @actions/core to v1.8.2 ([#63](https://github.com/netlify/submit-build-plugin-action/issues/63)) ([03f4641](https://github.com/netlify/submit-build-plugin-action/commit/03f464129cdf0205d92771b428fbcddca9259649))
+* **deps:** update dependency @actions/core to v1.9.0 ([#79](https://github.com/netlify/submit-build-plugin-action/issues/79)) ([75ce3cd](https://github.com/netlify/submit-build-plugin-action/commit/75ce3cd91d5499d6cb68f5dbc7b268d2001cfaa0))
+* **deps:** update dependency @actions/github to v5.0.3 ([#64](https://github.com/netlify/submit-build-plugin-action/issues/64)) ([99ca7e3](https://github.com/netlify/submit-build-plugin-action/commit/99ca7e3116d02d93ab7659a87f484a43311d38b9))
+* **deps:** update dependency @octokit/graphql-schema to v10.74.0 ([#82](https://github.com/netlify/submit-build-plugin-action/issues/82)) ([54107b1](https://github.com/netlify/submit-build-plugin-action/commit/54107b10b31929cac73f4faaa0182a794799647e))
+* **deps:** update dependency @octokit/graphql-schema to v10.74.1 ([#85](https://github.com/netlify/submit-build-plugin-action/issues/85)) ([2846e26](https://github.com/netlify/submit-build-plugin-action/commit/2846e26286a3879c09422aae2d1e44f53690ca9a))
+* **deps:** update dependency @octokit/graphql-schema to v10.74.2 ([#88](https://github.com/netlify/submit-build-plugin-action/issues/88)) ([7bf313c](https://github.com/netlify/submit-build-plugin-action/commit/7bf313caf8e831ee4fb2e33fc373fb53c8344092))
+* **deps:** update dependency octokit-plugin-create-pull-request to v3.12.2 ([#86](https://github.com/netlify/submit-build-plugin-action/issues/86)) ([7d80d20](https://github.com/netlify/submit-build-plugin-action/commit/7d80d206b97a82beb662fcd68ea89a6a87a9b724))
+* **deps:** update dependency pacote to v13.3.0 ([#60](https://github.com/netlify/submit-build-plugin-action/issues/60)) ([47ef7c4](https://github.com/netlify/submit-build-plugin-action/commit/47ef7c40c301bc20dbf7718cfdf2ec9ec845596f))
+* **deps:** update dependency pacote to v13.4.1 ([#67](https://github.com/netlify/submit-build-plugin-action/issues/67)) ([a4da1f5](https://github.com/netlify/submit-build-plugin-action/commit/a4da1f50aaf4453c68690d7e7349344fabc77313))
+* **deps:** update dependency pacote to v13.5.0 ([#71](https://github.com/netlify/submit-build-plugin-action/issues/71)) ([7302abd](https://github.com/netlify/submit-build-plugin-action/commit/7302abd61987ff62cd3dec70ad8b56d00702697e))
+* **deps:** update dependency pacote to v13.6.0 ([#76](https://github.com/netlify/submit-build-plugin-action/issues/76)) ([e0f385b](https://github.com/netlify/submit-build-plugin-action/commit/e0f385b2770d038e829079d54bc4ff352955f4b4))
+* **deps:** update dependency pacote to v13.6.1 ([#80](https://github.com/netlify/submit-build-plugin-action/issues/80)) ([197a257](https://github.com/netlify/submit-build-plugin-action/commit/197a257e9d7e34561f0c9dff57e84b17de73be07))
+
 ### [1.1.7](https://github.com/netlify/submit-build-plugin-action/compare/v1.1.6...v1.1.7) (2022-04-11)
 
 
