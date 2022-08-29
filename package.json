@@ -69,7 +69,7 @@
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/github": "^5.0.0",
-    "@octokit/graphql-schema": "^10.73.0",
+    "@octokit/graphql-schema": "^12.0.0",
     "node-fetch": "^2.6.7",
     "octokit-plugin-create-pull-request": "^3.10.0",
     "p-wait-for": "^3.0.0",
