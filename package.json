@@ -50,8 +50,8 @@
     "test": "test"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.0",
-    "@commitlint/config-conventional": "^16.0.0",
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
     "@netlify/eslint-config-node": "^6.0.0",
     "@types/js-yaml": "^4.0.5",
     "@types/pacote": "^11.1.3",
