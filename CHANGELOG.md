@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.1.8](https://github.com/netlify/submit-build-plugin-action/compare/v1.1.7...v1.1.8) (2022-05-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @actions/core to v1.7.0 ([#57](https://github.com/netlify/submit-build-plugin-action/issues/57)) ([a384ac9](https://github.com/netlify/submit-build-plugin-action/commit/a384ac9e6df7fe06e1e8515345f4c0f11fc217aa))
+* **deps:** update dependency @actions/core to v1.8.0 ([#59](https://github.com/netlify/submit-build-plugin-action/issues/59)) ([78083fe](https://github.com/netlify/submit-build-plugin-action/commit/78083fe2a8c8d317b45a3e231f65ac887b984f16))
+* **deps:** update dependency pacote to v13.3.0 ([#60](https://github.com/netlify/submit-build-plugin-action/issues/60)) ([47ef7c4](https://github.com/netlify/submit-build-plugin-action/commit/47ef7c40c301bc20dbf7718cfdf2ec9ec845596f))
+
 ### [1.1.7](https://github.com/netlify/submit-build-plugin-action/compare/v1.1.6...v1.1.7) (2022-04-11)
 
 
