@@ -71,7 +71,7 @@
     "@actions/github": "^5.0.0",
     "@octokit/graphql-schema": "^10.73.0",
     "node-fetch": "^2.6.7",
-    "octokit-plugin-create-pull-request": "^3.10.0",
+    "octokit-plugin-create-pull-request": "^5.0.0",
     "p-wait-for": "^3.0.0",
     "pacote": "^13.0.0",
     "read-pkg": "^5.0.0"
