@@ -17,9 +17,11 @@ export const validatePackage = async (packageName: string, pluginVersion: string
         core.info(`Found package ${packageAndVersion} in the npm registry`)
         return true
       } catch (error) {
-        const { statusCode } = error as Error & { statusCode: number }
-        if (statusCode) {
-          core.warning(`${packageAndVersion} does no exist in npm registry`)
+        const { statusCode, code } = error as Error & { statusCode?: number; code?: string }
+        // If the package is new and not yet published then there will be a 404.
+        // If the package exists but the version hasn't been published yet then there will be an ETARGET error.
+        if (statusCode || code === 'ETARGET') {
+          core.warning(`${packageAndVersion} does not exist in npm registry yet. Checking again shortly...`)
           return false
         }
         throw error
